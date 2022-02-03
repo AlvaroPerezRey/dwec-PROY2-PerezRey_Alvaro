@@ -17,12 +17,16 @@
 .header-logo{
     font-size: 50px;
     font-family: "Poppins ExtraBold";
-    color: var(--white)
+    color: var(--white);
 }
 
 .header-options{
     display: flex;
     align-items: center;
+}
+
+.header-options div{
+    margin: 5px;
 }
 
 .header-option {
