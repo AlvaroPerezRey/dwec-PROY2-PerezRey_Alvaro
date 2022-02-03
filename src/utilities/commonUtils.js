@@ -1,5 +1,6 @@
 import Home from "../PortfolioContainer/Home/Home"
 import About from "../PortfolioContainer/About/About";
+import Resume from "../PortfolioContainer/Resume/Resume";
 
 export const TOTAL_SCREENS = [
     {
@@ -11,12 +12,16 @@ export const TOTAL_SCREENS = [
         component: About,
     },
     {
-        screen_name: "About",
-        component: About,
+        screen_name: "Academics",
+        component: Resume,
     },
     {
-        screen_name: "About",
-        component: About,
+        screen_name: "Portfolio",
+        //component: Academics,
+    },
+    {
+        screen_name: "Utility",
+        //component: Academics,
     },
 ];
 
