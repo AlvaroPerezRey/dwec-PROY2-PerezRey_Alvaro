@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Typical from "react-typical";
-import axios from "axios";
-import { toast } from "react-toastify";
 import emailjs from 'emailjs-com';
 
 import imgBack from "../../../src/assets/Contact/mailz.jpeg";
