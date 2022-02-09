@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import './Profile.css';
+import "./Profile.css";
 
 export default function Profile() {
   return (
@@ -8,60 +8,59 @@ export default function Profile() {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <div className="colz-icon">
-              <a href="https://github.com/AlvaroPerezRey">
-                <i className="fa fa-github-square"></i>
+            <div className="cols-icon">
+            <a href="https://github.com/AlvaroPerezRey">
+                <i className="fa fa-github-square"/>
               </a>
               <a href="https://www.instagram.com/">
-                <i className="fa fa-instagram"></i>
+                <i className="fa fa-instagram"/>
               </a>
               <a href="https://www.facebook.com/">
-                <i className="fa fa-facebook-square"></i>
+                <i className="fa fa-facebook-square"/>
               </a>
               <a href="https://twitter.com/">
-                <i className="fa fa-twitter-square"></i>
+                <i className="fa fa-twitter-square"/>
               </a>
               <a href="https://www.youtube.com/">
-                <i className="fa fa-youtube-square"></i>
+                <i className="fa fa-youtube-square"/>
               </a>
             </div>
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'm <span className="highlighted-text">Alvaro</span>
+              Hello, I'M <span className="highlighted-text">Alvaro</span>
             </span>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
               {" "}
               <h1>
-                {" "}
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Ethusiastic Dev 🔥",
+                    "Ethusiastic Dev 😎",
                     1000,
-                    "Full Stack Developer ⚡️",
+                    "Full stack Developer 💻",
                     1000,
-                    "Mern Stack Dev 🎉",
+                    "Mern stck Dev 📱",
                     1000,
-                    "Cross Platform 👨‍💻",
+                    "Cross Platform Dev 🔴",
                     1000,
-                    "React/React Native Dev 💻",
+                    "React/React Native 🌐",
                     1000,
                   ]}
                 />
               </h1>
-              <span className="profile-role-tagline">
-                Knack of building applications with fron and back end
-                operations.
-              </span>
+            </span>
+            <span className="profile-role-tagline">
+              Knack of building applications with front and back end operations.
             </span>
           </div>
+
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire me </button>
-            <a href="CV_Alvaro.pdf" download="Alvaro CV_Alvaro.pdf">
+            <button className="btn primary-btn"> Hire Me </button>
+            <a href="CV_Alvaro.pdf" download="CV_Alvaro.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
