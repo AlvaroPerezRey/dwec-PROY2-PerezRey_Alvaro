@@ -1,22 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Typical from "react-typical";
 import emailjs from 'emailjs-com';
-
 import imgBack from "../../../src/assets/Contact/mailz.jpeg";
-import load1 from "../../../src/assets/Contact/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
 import "./Contact.css";
 
 export default function ContactMe(props) {
-  let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
-    Animations.animations.fadeInScreen(props.id);
-  };
-
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     const sendEmail = (e) => {
       e.preventDefault();

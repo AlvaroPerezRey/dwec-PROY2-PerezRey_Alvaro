@@ -3,8 +3,6 @@ import OwlCarousel from 'react-owl-carousel';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
-import ScrollService from '../../utilities/ScrollService';
-import Animations from '../../utilities/Animations';
 import "./Testimonial.css";
 import lady from "../../../src/assets/Testimonial/lady.png";
 import mike from "../../../src/assets/Testimonial/mike.png";
@@ -12,13 +10,6 @@ import man from "../../../src/assets/Testimonial/man.png";
 import shape from "../../../src/assets/Testimonial/shape-bg.png";
 
 export default function Testimonial(props) {
-    let fadeInScreenHandler = (screen) => {
-      if (screen.fadeScreen !== props.id) return;
-      Animations.animations.fadeInScreen(props.id);
-    };
-  
-    const fadeInSubscription =
-      ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   
     const options = {
       loop: true,
