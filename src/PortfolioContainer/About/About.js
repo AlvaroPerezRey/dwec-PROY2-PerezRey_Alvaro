@@ -7,10 +7,10 @@ export default function About(props) {
 
   const SCREEN_CONSTANTS = {
     description:
-      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+      "Desarrollador web FullStack con conocimientos en diferentes librerias de JavaScript y otros lenguajes para sacar el maximo rendimientos a las aplicaciones que creo",
     highlights: {
-      bullets: ["Full Stack", "Web Developer", "React", "API Rest"],
-      heading: "Here a few Highlights:",
+      bullets: ["Full Stack Web", "Diseño Frontend interactivo", "React"],
+      heading: "Algunos puntos destacados:",
     },
   };
   const renderHighlight = () => {
@@ -25,7 +25,7 @@ export default function About(props) {
   return (
     <div className="about-me-container screen-container" id={props.id || ""}>
       <div className="about-me-parent">
-        <ScreenHeading title={"About"} subHeading={"Why choose me?"} />
+        <ScreenHeading title={"About Me"} subHeading={"¿Porqué deberías elegirme?"} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">
@@ -41,9 +41,9 @@ export default function About(props) {
             <div className="about-me-options">
               <button className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-              > Hire me </button>
+              > Contacto </button>
               <a href="CV_Alvaro.pdf" download="Alvaro CV_Alvaro.pdf">
-                <button className="btn highlighted-btn">Get Resume</button>
+                <button className="btn highlighted-btn">Obtener CV</button>
               </a>
             </div>
           </div>

@@ -40,31 +40,31 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Ethusiastic Dev 😎",
+                    "Web Developer 😎",
                     1000,
-                    "Full stack Developer 💻",
+                    "Frontend 💻",
                     1000,
-                    "Mern stck Dev 📱",
+                    "Backend 💻",
                     1000,
-                    "Cross Platform Dev 🔴",
+                    "JavaScript-React 🔴",
                     1000,
-                    "React/React Native 🌐",
+                    "Python-Flask 🌐",
                     1000,
                   ]}
                 />
               </h1>
             </span>
             <span className="profile-role-tagline">
-              Knack of building applications with front and back end operations.
+              Desarrollador de aplicaciones web
             </span>
           </div>
 
           <div className="profile-options">
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-            > Hire Me </button>
+            > Contacto </button>
             <a href="CV_Alvaro.pdf" download="CV_Alvaro.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
+              <button className="btn highlighted-btn">Obtener CV</button>
             </a>
           </div>
         </div>

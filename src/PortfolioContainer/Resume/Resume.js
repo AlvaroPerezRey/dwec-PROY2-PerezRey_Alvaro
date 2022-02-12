@@ -42,113 +42,104 @@ const Resume = (props) => {
     );
   };
 
-  /* STATIC RESUME DATA FOR THE LABELS*/
+  /* ETIQUETAS ESTATICAS Y LOGOS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
+    { label: "Estudios", logoSrc: "education.svg" },
+    { label: "Experiencia Laboral", logoSrc: "work-history.svg" },
+    { label: "Herramientas de Desarrollo", logoSrc: "programming-skills.svg" },
+    { label: "Proyectos", logoSrc: "projects.svg" },
+    { label: "Intereses", logoSrc: "interests.svg" },
   ];
 
-  //here we have
+  /* TEXTO DE LAS PARTES DEL COMPONENTE */
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 80 },
+    { skill: "Java", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Node JS", ratingPercentage: 75 },
+    { skill: "Flask", ratingPercentage: 75 },
+    { skill: "Laravel", ratingPercentage: 75 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: <a href="https://alvaroperezrey.github.io/DWEC-PROY1-PerezRey_Alvaro/">Ryoukai:Aplicacion web sobre anime</a>,
+      duration: { fromDate: "2021", toDate: "2022" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "Primer proyecto de la asignatura de desarrollo web en entorno cliente donde debiamos creas una aplicacion web de la temática que quisieramos",
+      subHeading: "Tecnología usada: JavaScript, HTML y CSS.",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: <a href="https://github.com/AlvaroPerezRey/tictactoe_react">TicTacToe</a>,
+      duration: { fromDate: "2022", toDate: "2022" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "Tres en raya creado para entender como funciona la librería React",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Tecnología usada:  React.",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: <a href="https://github.com/AlvaroPerezRey/crud_react">Crud</a>,
+      duration: { fromDate: "2022", toDate: "2022" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Crud sencillo creando con React para entender el funcionamiento de la libreria con componentes",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Tecnología usada:  React.",
     },
   ];
 
+  /* ESTRUCTURA DEL COMPONENTE */
   const resumeDetails = [
+    /* ESTUDIOS */
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"IES Fernando Aguilar Quignon, Cádiz, España"}
+        subHeading={"Técnico Superior en Sistemas de Telecomunicaciones e Informática"}
+        fromDate={"2018"}
+        toDate={"2020"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={"IES Rafael Alberti, Cádiz, España"}
+        subHeading={"Técnico Superior en Desarrollo de Aplicaciones Web"}
+        fromDate={"2020"}
+        toDate={"2022"}
       />
     </div>,
 
-    /* WORK EXPERIENCE */
+    /* EXPERIENCIA LABORAL */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
+          heading={"FreeTourNativos"}
+          subHeading={"Especialista en base de datos y redes informáticas"}
           fromDate={"2021"}
-          toDate={"Present"}
+          toDate={"2021"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Trabajando con las herramientas de Google ADS para la
+              mejora de SEO en las distintas partes de la web de la
+              empresa.
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Organizando y llevando a cabo la remodelación de la web
+              de la empresa mediante herramientas como Wordpress
           </span>
           <br />
         </div>
       </div>
     </div>,
 
-    /* PROGRAMMING SKILLS */
+    /* HERRAMIENTAS DE DESARROLLO */
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
@@ -167,7 +158,7 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* PROJECTS */
+    /* PROYECTOS */
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
@@ -181,23 +172,24 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* Interests */
+    /* INTERESES */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Cómics"
+        description="Soy bastante aficionado a los comics, sobre todo los mangas, aunque tambien me gustan los libros de ciencia ficción."
       />
       <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+        heading="Música"
+        description="Escucho música siempre que puedo, trabajando, haciendo deporte o mientras hago las tareas del hogar, se diría que no puedo vivir sin música."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Videojuegos"
+        description="Desde pequeño he disfrutado de los videojuegos y ahora sigo haciendolo sobre todo en ordenador con amigos."
       />
     </div>,
   ];
 
+  /* ANIMACION DE LAS ETIQUETAS DEL COMPONENTE */
   const handleCarousal = (index) => {
     let offsetHeight = 360;
 
@@ -248,7 +240,7 @@ const Resume = (props) => {
   return (
     <div className="resume-container screen-container " id={props.id || ""}>
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"Resumen"} subHeading={"Información sobre mi"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

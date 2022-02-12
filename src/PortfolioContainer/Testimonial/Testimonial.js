@@ -36,8 +36,8 @@ export default function Testimonial(props) {
     return (
       <div>
         <ScreenHeading
-          title={"Testimonial"}
-          subHeading={"What My Client Say About Me"}
+          title={"Feedback"}
+          subHeading={"¿Qué piensan mis clientes de mi?"}
         />
         <section className="testimonial-section" id={props.id || ""}>
           <div className="container">
@@ -52,7 +52,7 @@ export default function Testimonial(props) {
                     <div className="testi-comment">
                       <p>
                         <i className="fa fa-quote-left" />
-                        I patronized Ehizeex and when He delivered, I honestly
+                        I patronized Alvaro and when He delivered, I honestly
                         fell in love with the project He is a very honest guy and
                         he delivers ontime.
                         <i className="fa fa-quote-right" />
@@ -88,7 +88,7 @@ export default function Testimonial(props) {
                     <div className="testi-comment">
                       <p>
                         <i className="fa fa-quote-left" />
-                        I patronized Ehizeex and when He delivered, I honestly
+                        I patronized Alvaro and when He delivered, I honestly
                         fell in love with the project He is a very honest guy and
                         he delivers ontime.
                         <i className="fa fa-quote-right" />
@@ -123,7 +123,7 @@ export default function Testimonial(props) {
                     <div className="testi-comment">
                       <p>
                         <i className="fa fa-quote-left" />
-                        I patronized Ehizeex and when He delivered, I honestly
+                        I patronized Alvaro and when He delivered, I honestly
                         fell in love with the project He is a very honest guy and
                         he delivers ontime.
                         <i className="fa fa-quote-right" />
@@ -158,7 +158,7 @@ export default function Testimonial(props) {
                     <div className="testi-comment">
                       <p>
                         <i className="fa fa-quote-left" />
-                        I patronized Ehizeex and when He delivered, I honestly
+                        I patronized Alvaro and when He delivered, I honestly
                         fell in love with the project He is a very honest guy and
                         he delivers ontime.
                         <i className="fa fa-quote-right" />
@@ -193,7 +193,7 @@ export default function Testimonial(props) {
           </div>
         </section>
         <div className="footer-image">
-          <img src={shape} alt="image not responding" />
+          <img src={shape} />
         </div>
       </div>
     );
