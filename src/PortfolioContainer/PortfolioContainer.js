@@ -1,6 +1,7 @@
 import React from "react";
 import { TOTAL_SCREENS } from "../utilities/commonUtils";
 
+//Portfolio donde recorremos los componentes llamados "screen_name"
 export default function PortfolioContainer() {
   const mapAllScreens = () => {
     return (

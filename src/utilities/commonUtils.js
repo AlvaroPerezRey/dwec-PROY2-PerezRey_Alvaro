@@ -2,8 +2,10 @@ import Home from "../PortfolioContainer/Home/Home"
 import About from "../PortfolioContainer/About/About";
 import Resume from "../PortfolioContainer/Resume/Resume";
 import Testimonial from "../PortfolioContainer/Testimonial/Testimonial";
+import Utilities from "../PortfolioContainer/Utilities/Utilities";
 import Contact from "../PortfolioContainer/Contact/Contact";
 
+//Conexion de los elementos del header con cada componente
 export const TOTAL_SCREENS = [
     {
         screen_name: "Home",
@@ -22,12 +24,16 @@ export const TOTAL_SCREENS = [
         component: Testimonial,
     },
     {
+        screen_name: "Utilities",
+        component: Utilities,
+    },
+    {
         screen_name: "Contact Me",
         component: Contact,
     },
 ];
 
-
+//Interaccion de la ventana del navegador hasta el componente que clickamos
 export const GET_SCREEN_INDEX = (screen_name) => {
     if (!screen_name) return -1;
   

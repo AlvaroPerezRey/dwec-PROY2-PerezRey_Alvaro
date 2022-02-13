@@ -3,6 +3,7 @@ import Typical from "react-typical";
 import "./Profile.css";
 import ScrollService from "../../../utilities/ScrollService";
 
+//Componente Profile dentro del componente Home
 export default function Profile() {
   return (
     <div className="profile-container">
@@ -37,6 +38,7 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
+                //utilizamos typical, una tipografia animada de react
                 <Typical
                   loop={Infinity}
                   steps={[
@@ -59,6 +61,7 @@ export default function Profile() {
             </span>
           </div>
 
+          //Damos funcionalidad a los botones
           <div className="profile-options">
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}

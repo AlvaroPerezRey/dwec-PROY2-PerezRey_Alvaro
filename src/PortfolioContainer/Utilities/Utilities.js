@@ -1,12 +1,11 @@
 import React from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
-import "./About.css";
+import "./Utilities.css";
 
-//Componente About
-export default function About(props) {
+//Componente Utilities AUN NO TERMINADO
+export default function Utilities(props) {
 
-  // Constantes del componente
   const SCREEN_CONSTANTS = {
     description:
       "Desarrollador web FullStack con conocimientos en diferentes librerias de JavaScript y otros lenguajes para sacar el maximo rendimientos a las aplicaciones que creo",
@@ -15,8 +14,6 @@ export default function About(props) {
       heading: "Algunos puntos destacados:",
     },
   };
-
-  // Estructura de los Destacados
   const renderHighlight = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
       <div className="highlight" key={i}>
@@ -30,7 +27,7 @@ export default function About(props) {
   return (
     <div className="about-me-container screen-container" id={props.id || ""}>
       <div className="about-me-parent">
-        <ScreenHeading title={"About Me"} subHeading={"¿Porqué deberías elegirme?"} />
+        <ScreenHeading title={"Utilities"} subHeading={"Algunas utilidades incorporadas"} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">

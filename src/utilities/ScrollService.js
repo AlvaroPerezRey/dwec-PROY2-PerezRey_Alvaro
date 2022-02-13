@@ -1,6 +1,7 @@
 import { TOTAL_SCREENS } from "./commonUtils";
 import { Subject } from "rxjs";
 
+//Utilizando la libreria rxjs, para la asincronia y el uso de callbacks
 export default class ScrollService {
   static scrollHandler = new ScrollService();
   static currentScreenBroadCaster = new Subject();
@@ -30,6 +31,7 @@ export default class ScrollService {
         return false;
     }
   };
+
   checkCurrentScreenUnderViewPort = (event) => {
     if (!event || Object.keys(event).length < 1) return;
     for (let screen of TOTAL_SCREENS) {

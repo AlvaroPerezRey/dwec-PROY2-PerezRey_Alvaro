@@ -5,7 +5,10 @@ import {faBars} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css';
 
+//Componente Header dentro del componente Home
 export default function Header() {
+
+    //Declaramos los estados
     const [selectedScreen, setSelectedScreen] = useState(0);
     const [showHeaderOptions, setShowHeaderOptions] = useState(false);
   

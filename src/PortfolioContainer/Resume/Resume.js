@@ -4,8 +4,9 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
+//Componente Resumen
 const Resume = (props) => {
-  /* STATES */
+  //Desclaramos los estados
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
@@ -17,7 +18,7 @@ const Resume = (props) => {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  /* REUSABLE MINOR COMPONENTS */
+  //Estructura reusable
   const ResumeHeading = (props) => {
     return (
       <div className="resume-heading">
@@ -42,7 +43,7 @@ const Resume = (props) => {
     );
   };
 
-  /* ETIQUETAS ESTATICAS Y LOGOS*/
+  //Etiquetas del componente y logos
   const resumeBullets = [
     { label: "Estudios", logoSrc: "education.svg" },
     { label: "Experiencia Laboral", logoSrc: "work-history.svg" },
@@ -51,7 +52,7 @@ const Resume = (props) => {
     { label: "Intereses", logoSrc: "interests.svg" },
   ];
 
-  /* TEXTO DE LAS PARTES DEL COMPONENTE */
+  //Informacion de las herramientas de desarrollo
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
@@ -64,6 +65,7 @@ const Resume = (props) => {
     { skill: "Laravel", ratingPercentage: 75 },
   ];
 
+  //Informacion de los projectos
   const projectsDetails = [
     {
       title: <a href="https://alvaroperezrey.github.io/DWEC-PROY1-PerezRey_Alvaro/">Ryoukai:Aplicacion web sobre anime</a>,
@@ -90,9 +92,9 @@ const Resume = (props) => {
     },
   ];
 
-  /* ESTRUCTURA DEL COMPONENTE */
+  //Estructura del componente
   const resumeDetails = [
-    /* ESTUDIOS */
+    //Informacion de los estudios
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"IES Fernando Aguilar Quignon, Cádiz, España"}
@@ -109,7 +111,7 @@ const Resume = (props) => {
       />
     </div>,
 
-    /* EXPERIENCIA LABORAL */
+    //Informacion de la experiencia laboral
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
@@ -139,7 +141,7 @@ const Resume = (props) => {
       </div>
     </div>,
 
-    /* HERRAMIENTAS DE DESARROLLO */
+    //Estructura de las herramientas de desarrollo
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
@@ -158,7 +160,7 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* PROYECTOS */
+    //Estructura de los proyectos
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
@@ -172,7 +174,7 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* INTERESES */
+    //Estructura de los proyectos
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Cómics"
@@ -189,7 +191,6 @@ const Resume = (props) => {
     </div>,
   ];
 
-  /* ANIMACION DE LAS ETIQUETAS DEL COMPONENTE */
   const handleCarousal = (index) => {
     let offsetHeight = 360;
 
@@ -201,6 +202,7 @@ const Resume = (props) => {
     setSelectedBulletIndex(index);
   };
 
+  //indices del componente
   const getBullets = () => {
     return resumeBullets.map((bullet, index) => (
       <div
@@ -219,6 +221,7 @@ const Resume = (props) => {
     ));
   };
 
+  //Para obtener la informacion de cada uno de los indices
   const getResumeScreens = () => {
     return (
       <div
@@ -232,11 +235,11 @@ const Resume = (props) => {
 
   useEffect(() => {
     return () => {
-      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
       fadeInSubscription.unsubscribe();
     };
   }, [fadeInSubscription]);
 
+  //Estructura del componente
   return (
     <div className="resume-container screen-container " id={props.id || ""}>
       <div className="resume-content">
