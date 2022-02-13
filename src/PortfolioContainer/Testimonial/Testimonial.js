@@ -9,6 +9,7 @@ import mike from "../../../src/assets/Testimonial/mike.png";
 import man from "../../../src/assets/Testimonial/man.png";
 import shape from "../../../src/assets/Testimonial/shape-bg.png";
 
+//Componente tertimonios
 export default function Testimonial(props) {
   
     const options = {
@@ -33,6 +34,7 @@ export default function Testimonial(props) {
       },
     };
   
+    //Estructura del componente y ejecucion de la libreria Owlcarousel para la creacion del carrusel
     return (
       <div>
         <ScreenHeading
