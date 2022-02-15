@@ -1,4 +1,4 @@
-.about-me-container{
+.utility-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,36 +6,65 @@
     margin: 50px 0 0 0;
 }
 
-.about-me-parent{
+.utility-parent{
     max-width: 1000px;
     width: 70%;
 }
 
-.about-me-card{
+.utility-card{
     display: flex;
     width: 100%;
     box-shadow: 0 0px 20px -2px #1f2235;
 }
 
-.about-me-profile{
-    width: 50%;
-    background-image: url("../../assets/About/gradua.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.about-me-details{
-    width: 48%;
-    text-align: justify;
+.utility-details{
+    width: 100%;
+    text-align: center;
     padding: 30px;
+    justify-content: center;
+    margin: 30px;
 }
 
-.about-me-description{
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square {
+    background: rgb(rgb(134, 87, 173));
+    border: 1px solid rgb(105, 24, 172);
+    float: left;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    color: rgb(112, 7, 197);
+}
+
+.game-info{
+    width: 50%;
+    margin: -35% 0% 0% 40%;
+}
+
+.game-board{
+    width: 50%;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.utility-description{
     font-size: 12px;
 }
 
-.about-me-highlights{
+.utility-highlights{
     margin: 80px 0;
 }
 
@@ -60,32 +89,34 @@
     border-radius: 50%;
 }
 
-.about-me-options .highlighted-btn{
+.utility-options .highlighted-btn{
     margin: 0 0 0 30px;
 }
 
+
+
 @media only screen and (max-width: 1110px){
-    .about-me-parent{
+    .utility-parent{
         width: 88%;
     }
 }
 @media only screen and (max-width: 898px){
-    .about-me-profile{
+    .utility-profile{
         display: none;
     }
-    .about-me-details{
+    .utility-details{
         width: 100%;
     }
 }
 @media only screen and (max-width: 466px){
-    .about-me-options{
+    .utility-options{
         display: flex;
         flex-direction: column;
     }
-    .about-me-options .highlighted-btn{
+    .utility-options .highlighted-btn{
         margin: 24px 0 0 0 !important;
     }
-    .about-me-options button{
+    .utility-options button{
         width: 100%;
     }
 }
