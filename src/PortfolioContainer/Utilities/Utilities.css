@@ -32,8 +32,8 @@
 }
 
 .square {
-    background: rgb(rgb(134, 87, 173));
-    border: 1px solid rgb(105, 24, 172);
+    background: rgb(rgb(207, 207, 207));
+    border: 2px solid tomato;
     float: left;
     font-size: 70px;
     font-weight: bold;
@@ -44,16 +44,22 @@
     padding: 0;
     text-align: center;
     width: 100px;
-    color: rgb(112, 7, 197);
+    color: tomato;
 }
 
 .game-info{
     width: 50%;
     margin: -35% 0% 0% 40%;
+    font-family: "Poppins Light";
+}
+
+.game-info h1{
+    font-family: "Poppins Medium";
 }
 
 .game-board{
     width: 50%;
+    font-family: "Poppins Medium";
 }
 
 .status {

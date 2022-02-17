@@ -154,6 +154,7 @@ export default function Utilities(props) {
         <ScreenHeading title={"Utilities"} subHeading={"Algunas utilidades incorporadas"} />
         <div className="utility-card">
           <div className="utility-details">
+          <h1>TicTacToe</h1>
             <Game/>
           </div>
         </div>
