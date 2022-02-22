@@ -4,6 +4,7 @@ import Resume from "../PortfolioContainer/Resume/Resume";
 import Testimonial from "../PortfolioContainer/Testimonial/Testimonial";
 import Utilities from "../PortfolioContainer/Utilities/Utilities";
 import Contact from "../PortfolioContainer/Contact/Contact";
+import Footer from "../PortfolioContainer/Footer/Footer";
 
 //Conexion de los elementos del header con cada componente
 export const TOTAL_SCREENS = [
@@ -30,6 +31,10 @@ export const TOTAL_SCREENS = [
     {
         screen_name: "Contact Me",
         component: Contact,
+    },
+    {
+        screen_name: "",
+        component: Footer,
     },
 ];
 

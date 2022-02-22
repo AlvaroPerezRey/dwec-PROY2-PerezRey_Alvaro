@@ -43,14 +43,6 @@ export default function About(props) {
               </div>
               {renderHighlight()}
             </div>
-            <div className="about-me-options">
-              <button className="btn primary-btn"
-              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-              > Contacto </button>
-              <a href="CV_Alvaro.pdf" download="Alvaro CV_Alvaro.pdf">
-                <button className="btn highlighted-btn">Obtener CV</button>
-              </a>
-            </div>
           </div>
         </div>
       </div>
