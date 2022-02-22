@@ -1,7 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
-import ScrollService from "../../../utilities/ScrollService";
 
 //Componente Profile dentro del componente Home
 export default function Profile() {

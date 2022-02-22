@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import imgBack from "../../../src/assets/Contact/mailz.jpeg";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import Footer from "./Footer/Footer"
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 //Componente ContactMe
@@ -20,6 +21,16 @@ export default function ContactMe(props) {
             console.log(error.text);
         });
         e.target.reset()
+    };
+
+    const submitForm = () => {
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Mensaje enviado',
+        showConfirmButton: false,
+        timer: 1500
+      });
     };
 
   //Estructura del componente
@@ -39,16 +50,16 @@ export default function ContactMe(props) {
           </div>
           <form onSubmit={sendEmail}>
             <label htmlFor="name">Nombre</label>
-            <input type="text" name="name" pattern="[A-Za-z]{3,12}" required/>
+            <input type="text" id="nombre" name="name" pattern="[A-Za-z]{3,12}" required/>
 
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
 
             <label htmlFor="message">Asunto</label>
-            <textarea type="text" name="message" required/>
+            <textarea type="text" id="asunto" name="message" required/>
 
             <div className="send-btn">
-              <button type="submit">
+              <button  type="submit" onClick={submitForm}>
                 Enviar 
                 <i className="fa fa-paper-plane" />
               </button>

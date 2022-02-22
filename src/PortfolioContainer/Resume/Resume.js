@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
@@ -15,8 +14,6 @@ const Resume = (props) => {
 
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   //Estructura reusable
   const ResumeHeading = (props) => {
@@ -232,12 +229,6 @@ const Resume = (props) => {
       </div>
     );
   };
-
-  useEffect(() => {
-    return () => {
-      fadeInSubscription.unsubscribe();
-    };
-  }, [fadeInSubscription]);
 
   //Estructura del componente
   return (
