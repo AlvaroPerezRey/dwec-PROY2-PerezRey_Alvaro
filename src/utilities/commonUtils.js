@@ -9,7 +9,7 @@ import Footer from "../PortfolioContainer/Footer/Footer";
 //Conexion de los elementos del header con cada componente
 export const TOTAL_SCREENS = [
     {
-        screen_name: "Home",
+        screen_name: "",
         component: Home,
     },
     {
@@ -21,7 +21,7 @@ export const TOTAL_SCREENS = [
         component: Resume,
     },
     {
-        screen_name: "Portfolio",
+        screen_name: "Feedback",
         component: Testimonial,
     },
     {
