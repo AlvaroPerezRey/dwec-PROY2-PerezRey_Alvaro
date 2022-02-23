@@ -4,11 +4,11 @@ import "./Academics.css";
 
 //Componente Resumen
 const Resume = (props) => {
-  //Desclaramos los estados
+  //Declaramos los estados
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
-  //Estructura reusable
+  //Estructura reusable para mostrar el contenido de cada uno de los apartados del componente
   const ResumeHeading = (props) => {
     return (
       <div className="resume-heading">
@@ -33,7 +33,7 @@ const Resume = (props) => {
     );
   };
 
-  //Etiquetas del componente y logos
+  //Lista de Diccionarios donde almacenamos el titulo de los apartados y su icono
   const resumeBullets = [
     { label: "Estudios", logoSrc: "education.svg" },
     { label: "Experiencia Laboral", logoSrc: "work-history.svg" },
@@ -42,7 +42,7 @@ const Resume = (props) => {
     { label: "Intereses", logoSrc: "interests.svg" },
   ];
 
-  //Informacion de las herramientas de desarrollo
+  //Lista de Diccionarios con el nivel de las herramientas de desarrollo
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
@@ -55,7 +55,7 @@ const Resume = (props) => {
     { skill: "Laravel", ratingPercentage: 75 },
   ];
 
-  //Informacion de los projectos
+  //Lista de diccionarios con los proyectos
   const projectsDetails = [
     {
       title: (
@@ -88,7 +88,7 @@ const Resume = (props) => {
     },
   ];
 
-  //Estructura del componente
+  // Lista de estructuras donde utilizaremos la funcion ResumeHeading para estructurar los datos
   const resumeDetails = [
     //Informacion de los estudios
     <div className="resume-screen-container" key="education">
@@ -186,6 +186,7 @@ const Resume = (props) => {
     </div>,
   ];
 
+  // Funcion que recreara el movimiento del menu al clickar sobre los apartados
   const handleCarousal = (index) => {
     let offsetHeight = 360;
 
@@ -197,7 +198,7 @@ const Resume = (props) => {
     setSelectedBulletIndex(index);
   };
 
-  //indices del componente
+  //Funcion con evento onClick para mostrar cada uno de los apartados cuando se activa el evento
   const getBullets = () => {
     return resumeBullets.map((bullet, index) => (
       <div
@@ -216,7 +217,7 @@ const Resume = (props) => {
     ));
   };
 
-  //Para obtener la informacion de cada uno de los indices
+  //Funcion para mostrar el elemento seleccionado, se utiliza la funcion map para recorrer la lista
   const getResumeScreens = () => {
     return (
       <div

@@ -1,8 +1,10 @@
 import React from "react";
 import { TOTAL_SCREENS } from "../reutilizables/Screens";
 
-//Portfolio donde recorremos los componentes llamados "screen_name"
+//Componente contenedor, donde estaran todas las ventanas o Screens de cada componente
 export default function PortfolioContainer() {
+
+  //Recorreremos todas nuestras Screens con su estructura y los mostraremos en pantalla con una key e id
   const mapAllScreens = () => {
     return TOTAL_SCREENS.map((screen) =>
       screen.component ? (

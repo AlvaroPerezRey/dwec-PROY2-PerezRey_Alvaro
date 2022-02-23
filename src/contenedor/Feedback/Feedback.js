@@ -11,6 +11,8 @@ import shape from "../../../src/assets/Feedback/shape-bg.png";
 
 //Componente tertimonios
 export default function Testimonial(props) {
+  
+  // Diccionario con los atributos que le vamos a dar a nuestro carrusel
   const options = {
     loop: true,
     margin: 0,

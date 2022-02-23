@@ -1,4 +1,6 @@
-import Classes from './Style.module.css'
+import Classes from './Style.module.css';
+
+//Funcion para darle funcionalidad con los eventos onClick a nuestro tablero
 const Square = (props) => {
     return (
         <button className={Classes.Square} onClick={props.onClick}>

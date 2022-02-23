@@ -4,17 +4,17 @@ import "./About.css";
 
 //Componente About
 export default function About(props) {
-  // Constantes del componente
+  // Diccionario donde almacenamos la datos que mostraremos en el componente
   const SCREEN_CONSTANTS = {
     description:
-      "Desarrollador web FullStack con conocimientos en diferentes librerias de JavaScript y otros lenguajes para sacar el maximo rendimientos a las aplicaciones que creo",
+      "Desarrollador web FullStack con conocimientos en diferentes librerias de JavaScript y otros lenguajes para sacar el maximo rendimientos a las aplicaciones que creo.",
     highlights: {
       bullets: ["Full Stack Web", "Diseño Frontend interactivo", "React"],
       heading: "Algunos puntos destacados:",
     },
   };
 
-  // Estructura de los Destacados
+  // Estructura de los Destacados, recorreremos los destacados con la funcion map
   const renderHighlight = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
       <div className="highlight" key={i}>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Square from './Square'
 import Classes from './Style.module.css'
+
+// Clase Board para construir nuestro tablero y con que caracter vamos a pintar
 class Board extends Component {
     constructor(props){
         super(props)
@@ -83,7 +85,7 @@ class Board extends Component {
                     <div className={Classes.ResetBtn}>
                         <button onClick={()=>{return this.setState({squares:Array(9).fill(null),
                                                                             xTurn:true,
-                                                                            reset:false})}}>RESET</button>
+                                                                            reset:false})}}>REINICIAR</button>
                     </div>
                     :
                     <br/>
@@ -96,7 +98,7 @@ class Board extends Component {
 
 export default Board
 
-
+// Funcion para declarar al ganador
 function findWinner(squares){
   const winConditions=[
         [0,1,2],
@@ -116,6 +118,7 @@ function findWinner(squares){
     return null;
 }
 
+//Funcion para marcar la casilla si esta vacia
 function isDraw(square){
     for(let i=0;i<9;i++)
     {

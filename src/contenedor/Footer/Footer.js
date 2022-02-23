@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-//Componente ContactMe
+//Componente Footer
 export default function Footer() {
   //Estructura del componente
   return (
@@ -12,24 +12,24 @@ export default function Footer() {
             <div class="col-xl-4 col-md-4 mb-30">
               <div class="single-cta">
                 <div class="cta-text">
-                  <h4>Encuentranos</h4>
-                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                  <h4>Encuéntranos</h4>
+                  <span>Plaza España, 2N , 11007 Cadiz</span>
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-md-4 mb-30">
               <div class="single-cta">
                 <div class="cta-text">
-                  <h4>Llamanos</h4>
-                  <span>9876543210 0</span>
+                  <h4>Llámanos</h4>
+                  <span>768654320</span>
                 </div>
               </div>
             </div>
             <div class="col-xl-4 col-md-4 mb-30">
               <div class="single-cta">
                 <div class="cta-text">
-                  <h4>Escribenos</h4>
-                  <span>mail@info.com</span>
+                  <h4>Escríbenos</h4>
+                  <span>alvaroperez@info.com</span>
                 </div>
               </div>
             </div>

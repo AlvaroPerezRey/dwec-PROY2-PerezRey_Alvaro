@@ -12,13 +12,17 @@ export default function Header() {
     const [selectedScreen, setSelectedScreen] = useState(0);
     const [showHeaderOptions, setShowHeaderOptions] = useState(false);
   
+    //Funcion para comenzar el indice de Screens
     const updateCurrentScreen = (currentScreen) => {
       if (!currentScreen || !currentScreen.screenInView) return;
   
       let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
       if (screenIndex < 0) return;
     };
-    let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen)
+    let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
+
+    //Funcion darle la funcionalidad mediante el evento onClick y asi poder dirigirnos a cada
+    // una de las Screens que corresponden a cada componente. Se utiliza la funcion map para recorrer
     const getHeaderOptions = () => {
         return TOTAL_SCREENS.map((Screen, i) => (
           <div
@@ -31,6 +35,7 @@ export default function Header() {
         ));
       };
     
+      //Crea la estructura de las opciones del header
       const getHeaderOptionsClasses = (index) => {
         let classes = "header-option ";
         if (index < TOTAL_SCREENS.length - 1) classes += "header-option-seperator ";
@@ -40,6 +45,7 @@ export default function Header() {
         return classes;
       };
 
+      // Funcion para cambiar de pantalla hasta el componente
       const switchScreen = (index, screen) => {
         let screenComponent = document.getElementById(screen.screen_name);
         if (!screenComponent) return;
@@ -55,6 +61,7 @@ export default function Header() {
         };
       }, [currentScreenSubscription]);
 
+      //Estructura de nuestro componente
       return (
         <div
           className="header-container"

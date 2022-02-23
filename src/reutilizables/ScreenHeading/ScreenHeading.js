@@ -1,7 +1,7 @@
 import React from "react";
 import "./ScreenHeading.css";
 
-// Estructura de los bloques
+// Estructura de los bloques que encabezan cada componente
 export default function ScreenHeading(props) {
   return (
     <div className="heading-container">

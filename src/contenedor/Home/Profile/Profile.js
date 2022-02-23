@@ -2,7 +2,8 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
-//Componente Profile dentro del componente Home
+// Componente Profile dentro del componente Home, donde haremos uso de la libreria Typical
+// ademas añadiremos la funcionalidad de descargar nuestro CV clicando en un boton
 export default function Profile() {
   return (
     <div className="profile-container">

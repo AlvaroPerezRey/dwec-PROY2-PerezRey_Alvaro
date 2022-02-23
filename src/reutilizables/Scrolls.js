@@ -2,6 +2,7 @@ import { TOTAL_SCREENS } from "./Screens";
 import { Subject } from "rxjs";
 
 //Utilizando la libreria rxjs, para la asincronia y el uso de callbacks
+// La utilizamos en el header para la llamada, vista y acceso a cada componente via Scroll
 export default class ScrollService {
   static scrollHandler = new ScrollService();
   static currentScreenBroadCaster = new Subject();

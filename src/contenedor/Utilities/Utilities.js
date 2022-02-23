@@ -3,7 +3,7 @@ import ScreenHeading from "../../reutilizables/ScreenHeading/ScreenHeading";
 import "./Utilities.css";
 import Game from './components/Game'
 
-//Componente Utilities
+//Componente Utilities con nuestro tictactoe dentro
 export default function Utilities(props) {
 
   //Estructura del componente

@@ -6,7 +6,7 @@ import Utilities from "../contenedor/Utilities/Utilities";
 import Contact from "../contenedor/Contact/Contact";
 import Footer from "../contenedor/Footer/Footer";
 
-//Declaramos las Screens con sus componentes asociados en una lista
+//Lista de Diccionarios donde declaramos las Screens con sus componentes asociados
 export const TOTAL_SCREENS = [
   {
     screen_name: "",
@@ -38,7 +38,7 @@ export const TOTAL_SCREENS = [
   },
 ];
 
-//Damos un indice a cada una de las ventanas
+//Obtenemos las Screens
 export const GET_SCREEN_INDEX = (screen_name) => {
   if (!screen_name) return -1;
 
