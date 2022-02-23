@@ -71,7 +71,7 @@ Style_Game__eIPCM h1{
 }
 
 .Status{
-    color: tomato;
+    color: #ff5823;
     font-size: 50px;
     font-family: 'Coda Caption', sans-serif;
 }
@@ -96,11 +96,10 @@ Style_Game__eIPCM h1{
     letter-spacing: 1.3px;
     font-weight: 700;
     color: #313133;
-    background: tomato;
-  background: linear-gradient(90deg, rgb(129, 230, 129) 0%, rgb(142, 209, 79) 100%);
+    background: #ff5823;
     border: none;
     border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(113, 235, 37, 0.64);
+    box-shadow: 12px 12px 24px rgba(235, 111, 37, 0.64);
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;
@@ -111,7 +110,7 @@ Style_Game__eIPCM h1{
     .ResetBtn>button::before {
     content: '';
     border-radius: 1000px;
-    box-shadow: 0 0 60px rgba(129, 255, 64, 0.64);
+    box-shadow: 0 0 60px #ff5823;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -185,7 +184,7 @@ Style_Game__eIPCM h1{
 
     .Status{
     
-        color: tomato;
+        color: #ff5823;
         font-size: 30px;
         font-family: 'Coda Caption', sans-serif;
     }
@@ -199,7 +198,7 @@ Style_Game__eIPCM h1{
         letter-spacing: 1.3px;
         font-weight: 700;
         color: #313133;
-        background: tomato;
+        background: #ff5823;
       background: linear-gradient(90deg, rgb(129, 230, 129) 0%, rgb(142, 209, 79) 100%);
         border: none;
         border-radius: 1000px;
