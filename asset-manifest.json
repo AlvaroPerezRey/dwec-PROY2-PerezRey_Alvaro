@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dwec-PROY2-PerezRey_Alvaro/static/css/main.5e0fb4f1.css",
-    "main.js": "/dwec-PROY2-PerezRey_Alvaro/static/js/main.586785bf.js",
+    "main.js": "/dwec-PROY2-PerezRey_Alvaro/static/js/main.c9fa38f5.js",
     "static/media/bg-1.jpg": "/dwec-PROY2-PerezRey_Alvaro/static/media/bg-1.e7a118c397efc44bbf9e.jpg",
     "static/media/Poppins-Thin.ttf": "/dwec-PROY2-PerezRey_Alvaro/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
     "static/media/Poppins-Light.ttf": "/dwec-PROY2-PerezRey_Alvaro/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
@@ -24,10 +24,10 @@
     "static/media/education.svg": "/dwec-PROY2-PerezRey_Alvaro/static/media/education.10cfa28a40119ebd70cf.svg",
     "static/media/work-history.svg": "/dwec-PROY2-PerezRey_Alvaro/static/media/work-history.a566475dedb99dea4bb8.svg",
     "main.5e0fb4f1.css.map": "/dwec-PROY2-PerezRey_Alvaro/static/css/main.5e0fb4f1.css.map",
-    "main.586785bf.js.map": "/dwec-PROY2-PerezRey_Alvaro/static/js/main.586785bf.js.map"
+    "main.c9fa38f5.js.map": "/dwec-PROY2-PerezRey_Alvaro/static/js/main.c9fa38f5.js.map"
   },
   "entrypoints": [
     "static/css/main.5e0fb4f1.css",
-    "static/js/main.586785bf.js"
+    "static/js/main.c9fa38f5.js"
   ]
 }
